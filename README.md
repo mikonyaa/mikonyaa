@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/banner-miko-cute.jpg" alt="miko cute banner" width="100%" />
+  <p align="center">
+  <img src="./banner-miko-cute.jpg" alt="miko cute banner" width="100%" />
+</p>
 </p>
 
 <p align="center">
