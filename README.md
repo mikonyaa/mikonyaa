@@ -1,5 +1,6 @@
-<p align="center">
-  <img src="banner-miko-projects.jpg" alt="miko projects banner" width="100%" />
+
+  <p align="center">
+  <img src="./banner-miko-cute.jpg" alt="miko cute banner" width="100%" />
 </p>
 
 <p align="center">
