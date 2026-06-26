@@ -4,6 +4,10 @@
 </p>
 
 <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=700&color=58A6FF&center=true&vCenter=true&width=850&lines=Building+clean+iOS+apps;Working+with+data%2C+APIs+and+automation;Creating+products+with+real+user+value;Turning+ideas+into+working+software;Designing+smooth+student+experiences;Automating+boring+stuff+with+Python;Shipping+SwiftUI+interfaces+that+feel+native;Connecting+apps%2C+databases+and+AI+workflows;Making+tools+that+save+people+time;Code%2C+coffee%2C+ship%2C+repeat" alt="Typing SVG" />
+</p>
+
+<p align="center">
   📍 Astana · 📱 iOS · ⚡ Automation · 🧠 AI Workflows
 </p>
 
@@ -28,8 +32,14 @@
   <img src="https://streak-stats.demolab.com?user=mikonyaa&theme=tokyonight&hide_border=true" />
 </p>
 
-
+<br />
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=700&color=58A6FF&center=true&vCenter=true&width=850&lines=Building+clean+iOS+apps;Working+with+data%2C+APIs+and+automation;Creating+products+with+real+user+value;Turning+ideas+into+working+software;Designing+smooth+student+experiences;Automating+boring+stuff+with+Python;Shipping+SwiftUI+interfaces+that+feel+native;Connecting+apps%2C+databases+and+AI+workflows;Making+tools+that+save+people+time;Code%2C+coffee%2C+ship%2C+repeat" alt="Typing SVG" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake.svg" />
+  </picture>
 </p>
+
+
