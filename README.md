@@ -43,11 +43,7 @@
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=mikonyaa&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mikonyaa&theme=tokyo-night&hide_border=true&radius=12" alt="GitHub Activity Graph" />
+  <img src="https://github-profile-trophy.vercel.app/?username=mikonyaa&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&margin-h=10&column=4" alt="GitHub trophies" />
 </p>
 
 <p align="center">
