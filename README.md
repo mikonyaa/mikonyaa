@@ -30,11 +30,29 @@
 <h3 align="center">🛠 Tech Stack</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=swift,python,ts,js,react,nextjs,nodejs,postgres,mysql,sqlite,git,github,postman,vscode&theme=light" alt="Tech Stack" />
+  <b>Apple Development</b>
 </p>
 
 <p align="center">
-  Swift · SwiftUI · UIKit · Python · SQL · PostgreSQL · MySQL · SQLite · React · Next.js · TypeScript · Node.js · REST API · Git · AI Workflows
+  <img src="https://skillicons.dev/icons?i=swift,apple,xcode&theme=light" alt="Apple Development Stack" />
+</p>
+
+<p align="center">
+  Swift · SwiftUI · UIKit · Objective-C · Xcode · iOS · iPadOS · macOS · watchOS · visionOS · SF Symbols · Apple HIG · TestFlight
+</p>
+
+<br />
+
+<p align="center">
+  <b>Product, Backend & Automation</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,postgres,mysql,sqlite,git,github&theme=light" alt="Product Backend Automation Stack" />
+</p>
+
+<p align="center">
+  Python · SQL · PostgreSQL · MySQL · SQLite · React · Next.js · TypeScript · Node.js · REST API · Git · GitHub · AI Workflows
 </p>
 
 <br />
