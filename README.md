@@ -31,59 +31,41 @@
 
 <h3 align="center">💎 Focus</h3>
 
-<table align="center">
-  <tr>
-    <td width="33%" align="center">
-      <h3>🍎 What I Build</h3>
-      <p>
-        Clean Apple-style interfaces, SwiftUI components, Apple platform templates, automation tools and API-connected products.
-      </p>
-    </td>
-    <td width="33%" align="center">
-      <h3>📌 Currently Building</h3>
-      <p>
-        A public collection of premium Apple-style templates for iOS, iPadOS, macOS and future Apple platforms.
-      </p>
-    </td>
-    <td width="33%" align="center">
-      <h3>🎯 Design Principles</h3>
-      <p>
-        Native feel, clear hierarchy, smooth interactions, minimal UI and useful human-centered details.
-      </p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <b>🍎 Apple-style UI</b><br />
+  Clean SwiftUI interfaces, reusable components and templates for Apple platforms.
+</p>
+
+<p align="center">
+  <b>⚡ Automation & APIs</b><br />
+  Python tools, API-connected products and AI-assisted workflows that save time.
+</p>
+
+<p align="center">
+  <b>🎯 Product Quality</b><br />
+  Native feel, clear hierarchy, smooth interactions and useful human-centered details.
+</p>
 
 <br />
 
-<h3 align="center">🚀 Featured Projects</h3>
+<h3 align="center">🚀 Featured Work</h3>
 
-<table align="center">
-  <tr>
-    <td width="50%" align="center">
-      <h3>🍎 Apple Design Templates</h3>
-      <p>
-        Premium SwiftUI templates for Apple platforms with clean UI, native feel and reusable components.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=flat-square&logo=swift&logoColor=white" />
-        <img src="https://img.shields.io/badge/Apple_HIG-111827?style=flat-square&logo=apple&logoColor=white" />
-        <img src="https://img.shields.io/badge/iPadOS-0A84FF?style=flat-square&logo=apple&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" align="center">
-      <h3>⚡ Automation Workflows</h3>
-      <p>
-        Python tools and AI-assisted workflows for APIs, automation and repetitive task handling.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/REST_API-111827?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/AI_Workflows-2563EB?style=flat-square&logo=openai&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/mikonyaa/Apple-Design-Templates">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mikonyaa&repo=Apple-Design-Templates&theme=tokyonight&hide_border=true&border_radius=12" alt="Apple Design Templates" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=flat-square&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apple_HIG-111827?style=flat-square&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apple_Platforms-0A84FF?style=flat-square&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Templates-2563EB?style=flat-square&logo=github&logoColor=white" />
+</p>
+
+<p align="center">
+  Premium SwiftUI templates for Apple platforms with clean UI, native feel and reusable components.
+</p>
 
 <br />
 
