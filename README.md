@@ -32,7 +32,7 @@
 <h3 align="center">💎 What I Build</h3>
 
 <p align="center">
-  Clean Apple-style interfaces · SwiftUI components · iOS app templates · automation tools · API-connected products · AI-powered workflows
+  Clean Apple-style interfaces · SwiftUI components · Apple platform templates · automation tools · API-connected products · AI-powered workflows
 </p>
 
 <br />
@@ -54,18 +54,18 @@
 <table align="center">
   <tr>
     <td width="50%" align="center">
-      <h3>Apple Design Templates</h3>
+      <h3>🍎 Apple Design Templates</h3>
       <p>
-        Premium SwiftUI templates for Apple platforms, focused on clean UI, native feel and reusable components.
+        Premium SwiftUI templates for Apple platforms with clean UI, native feel and reusable components.
       </p>
       <p>
         <b>SwiftUI · Apple HIG · iOS · iPadOS · macOS</b>
       </p>
     </td>
     <td width="50%" align="center">
-      <h3>Automation Workflows</h3>
+      <h3>⚡ Automation Workflows</h3>
       <p>
-        Python tools and AI-assisted workflows for saving time, connecting APIs and automating repetitive tasks.
+        Python tools and AI-assisted workflows for APIs, automation and repetitive task handling.
       </p>
       <p>
         <b>Python · REST API · AI Workflows · Automation</b>
