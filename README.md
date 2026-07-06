@@ -34,7 +34,22 @@
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=swift,apple,xcode&theme=light" alt="Apple Development Stack" />
+  <img src="https://skillicons.dev/icons?i=swift,apple&theme=light" alt="Apple Development Stack" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" />
+  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/UIKit-111827?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Objective--C-438EFF?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/iPadOS-111827?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=white" />
+  <img src="https://img.shields.io/badge/watchOS-111827?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/visionOS-000000?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/SF_Symbols-111827?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/TestFlight-0A84FF?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apple_HIG-000000?style=for-the-badge&logo=apple&logoColor=white" />
 </p>
 
 <p align="center">
@@ -44,15 +59,24 @@
 <br />
 
 <p align="center">
-  <b>Product, Backend & Automation</b>
+  <b>Backend, Databases & Automation</b>
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,postgres,mysql,sqlite,git,github&theme=light" alt="Product Backend Automation Stack" />
+  <img src="https://skillicons.dev/icons?i=python,ts,js,nodejs,express,react,nextjs,postgres,mysql,sqlite,git,github,docker,nginx,bash&theme=light" alt="Backend Databases Automation Stack" />
 </p>
 
 <p align="center">
-  Python · SQL · PostgreSQL · MySQL · SQLite · React · Next.js · TypeScript · Node.js · REST API · Git · GitHub · AI Workflows
+  <img src="https://img.shields.io/badge/REST_API-111827?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Automation-2563EB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI_Workflows-000000?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/API_Integration-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+</p>
+
+<p align="center">
+  Python · TypeScript · JavaScript · Node.js · Express · React · Next.js · SQL · PostgreSQL · MySQL · SQLite · REST API · API Integration · Automation · AI Workflows · Git · GitHub · GitHub Actions · Docker · Nginx · Bash
 </p>
 
 <br />
