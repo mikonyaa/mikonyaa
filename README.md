@@ -27,6 +27,63 @@
   <img src="https://komarev.com/ghpvc/?username=mikonyaa&style=flat-square&color=2563EB" />
 </p>
 
+<br />
+
+<h3 align="center">💎 What I Build</h3>
+
+<p align="center">
+  Clean Apple-style interfaces · SwiftUI components · iOS app templates · automation tools · API-connected products · AI-powered workflows
+</p>
+
+<br />
+
+<h3 align="center">📌 Currently Building</h3>
+
+<p align="center">
+  A public collection of premium Apple-style templates for iOS, iPadOS, macOS and future Apple platforms.
+</p>
+
+<p align="center">
+  Focused on native feeling, smooth interactions, clean structure and reusable SwiftUI components.
+</p>
+
+<br />
+
+<h3 align="center">🚀 Featured Projects</h3>
+
+<table align="center">
+  <tr>
+    <td width="50%" align="center">
+      <h3>Apple Design Templates</h3>
+      <p>
+        Premium SwiftUI templates for Apple platforms, focused on clean UI, native feel and reusable components.
+      </p>
+      <p>
+        <b>SwiftUI · Apple HIG · iOS · iPadOS · macOS</b>
+      </p>
+    </td>
+    <td width="50%" align="center">
+      <h3>Automation Workflows</h3>
+      <p>
+        Python tools and AI-assisted workflows for saving time, connecting APIs and automating repetitive tasks.
+      </p>
+      <p>
+        <b>Python · REST API · AI Workflows · Automation</b>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<h3 align="center">🎯 Design Principles</h3>
+
+<p align="center">
+  Native feel · Clear hierarchy · Smooth interactions · Minimal UI · Useful products · Human-centered details
+</p>
+
+<br />
+
 <h3 align="center">🛠 Tech Stack</h3>
 
 <p align="center">
@@ -72,11 +129,6 @@
 
 <br />
 
-<h3 align="center">📌 Currently Building</h3>
-
-<p align="center">
-  A public collection of Apple-style SwiftUI templates for iOS, iPadOS and future Apple platforms.
-</p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=mikonyaa&theme=tokyonight&hide_border=true&border_radius=12&hide_total_contributions=true" alt="GitHub Streak" />
 </p>
