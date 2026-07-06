@@ -52,7 +52,7 @@
 
 <p align="center">
   <a href="https://github.com/mikonyaa/Apple-Design-Templates">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mikonyaa&repo=Apple-Design-Templates&theme=tokyonight&hide_border=true&border_radius=12" alt="Apple Design Templates" />
+    <img src="./.github/banner-04-liquid-glass.png" alt="Apple Design Templates" width="100%" />
   </a>
 </p>
 
@@ -60,7 +60,7 @@
   <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=flat-square&logo=swift&logoColor=white" />
   <img src="https://img.shields.io/badge/Apple_HIG-111827?style=flat-square&logo=apple&logoColor=white" />
   <img src="https://img.shields.io/badge/Apple_Platforms-0A84FF?style=flat-square&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Templates-2563EB?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open_Source-2563EB?style=flat-square&logo=github&logoColor=white" />
 </p>
 
 <p align="center">
