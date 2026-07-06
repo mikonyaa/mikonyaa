@@ -29,23 +29,30 @@
 
 <br />
 
-<h3 align="center">💎 What I Build</h3>
+<h3 align="center">💎 Focus</h3>
 
-<p align="center">
-  Clean Apple-style interfaces · SwiftUI components · Apple platform templates · automation tools · API-connected products · AI-powered workflows
-</p>
-
-<br />
-
-<h3 align="center">📌 Currently Building</h3>
-
-<p align="center">
-  A public collection of premium Apple-style templates for iOS, iPadOS, macOS and future Apple platforms.
-</p>
-
-<p align="center">
-  Focused on native feeling, smooth interactions, clean structure and reusable SwiftUI components.
-</p>
+<table align="center">
+  <tr>
+    <td width="33%" align="center">
+      <h3>🍎 What I Build</h3>
+      <p>
+        Clean Apple-style interfaces, SwiftUI components, Apple platform templates, automation tools and API-connected products.
+      </p>
+    </td>
+    <td width="33%" align="center">
+      <h3>📌 Currently Building</h3>
+      <p>
+        A public collection of premium Apple-style templates for iOS, iPadOS, macOS and future Apple platforms.
+      </p>
+    </td>
+    <td width="33%" align="center">
+      <h3>🎯 Design Principles</h3>
+      <p>
+        Native feel, clear hierarchy, smooth interactions, minimal UI and useful human-centered details.
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br />
 
@@ -59,7 +66,9 @@
         Premium SwiftUI templates for Apple platforms with clean UI, native feel and reusable components.
       </p>
       <p>
-        <b>SwiftUI · Apple HIG · iOS · iPadOS · macOS</b>
+        <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=flat-square&logo=swift&logoColor=white" />
+        <img src="https://img.shields.io/badge/Apple_HIG-111827?style=flat-square&logo=apple&logoColor=white" />
+        <img src="https://img.shields.io/badge/iPadOS-0A84FF?style=flat-square&logo=apple&logoColor=white" />
       </p>
     </td>
     <td width="50%" align="center">
@@ -68,19 +77,13 @@
         Python tools and AI-assisted workflows for APIs, automation and repetitive task handling.
       </p>
       <p>
-        <b>Python · REST API · AI Workflows · Automation</b>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/REST_API-111827?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/AI_Workflows-2563EB?style=flat-square&logo=openai&logoColor=white" />
       </p>
     </td>
   </tr>
 </table>
-
-<br />
-
-<h3 align="center">🎯 Design Principles</h3>
-
-<p align="center">
-  Native feel · Clear hierarchy · Smooth interactions · Minimal UI · Useful products · Human-centered details
-</p>
 
 <br />
 
