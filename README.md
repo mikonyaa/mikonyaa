@@ -64,7 +64,7 @@
 </p>
 
 <p align="center">
-  Premium SwiftUI templates for Apple platforms with clean UI, native feel and reusable components.
+  Production-ready open-source SwiftUI templates and developer tools
 </p>
 
 <br />
