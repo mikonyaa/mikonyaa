@@ -5,6 +5,6 @@
 - ResizeLint terminal example: [project asset](https://github.com/mikonyaa/ResizeLint/blob/main/Assets/terminal-demo.png).
 - Menu Bar Command Kit animated demo: [project asset](https://github.com/mikonyaa/MacMenuBarCommandKit/blob/main/Assets/GIFs/mac-menu-bar-command-kit.gif).
 - Adaptive App Shell simulator screenshot: [project assets](https://github.com/mikonyaa/AdaptiveAppShell/tree/main/Assets).
-- Interface icons: [Pixelarticons by Gerrit Halfmann](https://github.com/halfmage/pixelarticons), MIT. Colors were adapted for dark and light backgrounds.
+- Interface icons: [Pixelarticons by Gerrit Halfmann](https://github.com/halfmage/pixelarticons), MIT. Colors, scale, and optical padding were adapted for the profile.
 - Technology marks: [Simple Icons](https://github.com/simple-icons/simple-icons). License information is in `licenses/`.
 - The two goose banners were prepared for this profile.
