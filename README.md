@@ -1,8 +1,6 @@
 <p><img src="./assets/goose-night.png" width="100%" alt="A goose at a vintage computer desk under a lamp, with a moonlit city outside the window."></p>
 
-# miko <img src="./assets/goose-honk.gif" width="76" align="absmiddle" alt="A little goose honking.">
-
-Apps, tools, and side projects.
+<p><img src="./assets/goose-honk.gif" width="40" align="absmiddle" alt="A little goose honking."> &nbsp; Apps, tools, and side projects.</p>
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/map-contact-dark.svg"><img src="./assets/icons/aligned/map-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> Astana, Kazakhstan &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/message-contact-dark.svg"><img src="./assets/icons/aligned/message-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://t.me/mikonyaa">Telegram</a> &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/mail-contact-dark.svg"><img src="./assets/icons/aligned/mail-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="mailto:dev.miko@icloud.com">Email</a></p>
 
