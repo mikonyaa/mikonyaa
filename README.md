@@ -1,127 +1,51 @@
-<p align="center">
-  <img src="./banner-miko-cute.jpg" alt="miko cute banner" width="100%" />
-</p>
+<p><img src="./assets/goose-night.png" width="100%" alt="A goose at a vintage computer desk under a lamp, with a moonlit city outside the window."></p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=700&color=58A6FF&center=true&vCenter=true&width=850&lines=Building+clean+iOS+apps;Working+with+data%2C+APIs+and+automation;Creating+products+with+real+user+value;Turning+ideas+into+working+software;Designing+smooth+student+experiences;Automating+boring+stuff+with+Python;Shipping+SwiftUI+interfaces+that+feel+native;Connecting+apps%2C+databases+and+AI+workflows;Making+tools+that+save+people+time;Code%2C+coffee%2C+ship%2C+repeat" alt="Typing SVG" />
-</p>
+# miko <img src="./assets/goose-honk.gif" width="76" alt="A little goose honking.">
 
-<p align="center">
-  📍 Astana · 🍎 Apple Platforms · ⚡ Automation · 🧠 AI Workflows
-</p>
+Apps, tools, and side projects.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apple_Platforms-111827?style=for-the-badge&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI_Workflows-2563EB?style=for-the-badge&logo=openai&logoColor=white" />
-</p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/map-dark.svg"><img src="./assets/icons/map-light.svg" width="20" height="20" alt=""></picture> Astana, Kazakhstan &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/message-dark.svg"><img src="./assets/icons/message-light.svg" width="20" height="20" alt=""></picture> <a href="https://t.me/mikonyaa">Telegram</a> &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/mail-dark.svg"><img src="./assets/icons/mail-light.svg" width="20" height="20" alt=""></picture> <a href="mailto:dev.miko@icloud.com">Email</a></p>
 
-<p align="center">
-  <a href="https://t.me/mikonyaa">
-    <img src="https://img.shields.io/badge/Telegram-%40mikonyaa-26A5E4?style=flat-square&logo=telegram&logoColor=white" />
-  </a>
-  <a href="mailto:dev.miko@icloud.com">
-    <img src="https://img.shields.io/badge/Email-dev.miko%40icloud.com-111827?style=flat-square&logo=icloud&logoColor=white" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=mikonyaa&style=flat-square&color=2563EB" />
-</p>
+## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/coffee-dark.svg"><img src="./assets/icons/coffee-light.svg" width="20" height="20" alt=""></picture> About me
 
-<br />
+I write Swift and Python. On the desk right now: a layout checker, a font checker, and a few app kits.
 
-<h3 align="center">💎 Focus</h3>
+## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/keyboard-dark.svg"><img src="./assets/icons/keyboard-light.svg" width="20" height="20" alt=""></picture> My toolbox
 
-<p align="center">
-  <b>🍎 Apple-style UI</b><br />
-  Clean SwiftUI interfaces, reusable components and templates for Apple platforms.
-</p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/swift-dark.svg"><img src="./assets/icons/swift-light.svg" width="28" height="28" alt=""></picture> <strong>Swift</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/python-dark.svg"><img src="./assets/icons/python-light.svg" width="28" height="28" alt=""></picture> <strong>Python</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/postgresql-dark.svg"><img src="./assets/icons/postgresql-light.svg" width="28" height="28" alt=""></picture> <strong>PostgreSQL</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/git-dark.svg"><img src="./assets/icons/git-light.svg" width="28" height="28" alt=""></picture> <strong>Git</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/docker-dark.svg"><img src="./assets/icons/docker-light.svg" width="28" height="28" alt=""></picture> <strong>Docker</strong></p>
 
-<p align="center">
-  <b>⚡ Automation & APIs</b><br />
-  Python tools, API-connected products and AI-assisted workflows that save time.
-</p>
+<table>
+<thead><tr><th align="left">Area</th><th align="left">What I work with</th></tr></thead>
+<tbody>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/code-dark.svg"><img src="./assets/icons/code-light.svg" width="20" height="20" alt=""></picture> <strong>Languages</strong></td><td>Swift · Python · Objective-C · SQL</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/apple-dark.svg"><img src="./assets/icons/apple-light.svg" width="20" height="20" alt=""></picture> <strong>Native apps</strong></td><td>SwiftUI · UIKit · Xcode<br>iOS · iPadOS · macOS · watchOS · visionOS</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/sqlite-dark.svg"><img src="./assets/icons/sqlite-light.svg" width="20" height="20" alt=""></picture> <strong>Databases</strong></td><td>PostgreSQL · MySQL · SQLite</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/githubactions-dark.svg"><img src="./assets/icons/githubactions-light.svg" width="20" height="20" alt=""></picture> <strong>Automation & workflow</strong></td><td>Python automation · AI workflows<br>Git · GitHub · GitHub Actions · Docker</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/xcode-dark.svg"><img src="./assets/icons/xcode-light.svg" width="20" height="20" alt=""></picture> <strong>Design & delivery</strong></td><td>SF Symbols · Apple HIG · TestFlight</td></tr>
+</tbody>
+</table>
 
-<p align="center">
-  <b>🎯 Product Quality</b><br />
-  Native feel, clear hierarchy, smooth interactions and useful human-centered details.
-</p>
+<p><a href="https://github.com/mikonyaa?tab=repositories"><img src="./assets/workbench.png" width="100%" alt="The workbench: apps, tools, utilities and miscellaneous projects. Open all repositories."></a></p>
 
-<br />
+## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/folder-dark.svg"><img src="./assets/icons/folder-light.svg" width="20" height="20" alt=""></picture> Projects on the desk
 
-<h3 align="center">🚀 Featured Work</h3>
+<table><tbody><tr><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/terminal-dark.svg"><img src="./assets/icons/terminal-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/fontwitness">FontWitness</a></h3><p><sub>CLI · font checks</sub></p><p><a href="https://github.com/mikonyaa/fontwitness"><img src="./assets/fontwitness-demo.gif" width="100%" alt="Recorded FontWitness demo using its synthetic fixture: broken font delivery, a measured mismatch, and a successful audit after repair."></a></p><p>Shows which fonts Chromium actually used and checks them against the expected ones.</p><ul><li>Reports you can open offline</li><li>Font checks that can fail a CI build</li></ul><p><a href="https://github.com/mikonyaa/fontwitness">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/fontwitness/blob/main/README.md">How it works</a></p></td><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/code-dark.svg"><img src="./assets/icons/code-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/ResizeLint">ResizeLint</a></h3><p><sub>Swift · static analysis</sub></p><p><a href="https://github.com/mikonyaa/ResizeLint"><img src="./assets/resizelint-demo.png" width="100%" alt="ResizeLint terminal example from the project repository, showing an RL001 layout finding and remediation."></a></p><p>Checks Swift source for UIKit layout code that can break when a window is resized.</p><ul><li>9 layout rules, with suggested fixes</li><li>Xcode messages, JSON, and SARIF output</li></ul><p><a href="https://github.com/mikonyaa/ResizeLint">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/ResizeLint/blob/main/Docs/Rules/README.md">Browse rules</a></p></td></tr><tr><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/keyboard-dark.svg"><img src="./assets/icons/keyboard-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/MacMenuBarCommandKit">Menu Bar Command Kit</a></h3><p><sub>SwiftUI · macOS</sub></p><p><a href="https://github.com/mikonyaa/MacMenuBarCommandKit"><img src="./assets/mac-menu-bar-demo.gif" width="100%" alt="Recorded MacMenuBarCommandKit demo states: workspace, menu dashboard, command palette and settings."></a></p><p>SwiftUI kit for a macOS app with a main window, menu bar controls, and a command palette.</p><ul><li>Search commands and navigate with the keyboard</li><li>Settings and Launch at Login</li></ul><p><a href="https://github.com/mikonyaa/MacMenuBarCommandKit">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/MacMenuBarCommandKit/blob/main/README.md">Demo guide</a></p></td><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/folder-dark.svg"><img src="./assets/icons/folder-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/AdaptiveAppShell">Adaptive App Shell</a></h3><p><sub>SwiftUI · iPhone and iPad</sub></p><p><a href="https://github.com/mikonyaa/AdaptiveAppShell"><img src="./assets/adaptive-shell-preview.png" width="100%" alt="Adaptive App Shell iPad simulator screenshot from the project repository, showing a sidebar and inspector."></a></p><p>SwiftUI app shell with tabs on iPhone and a sidebar on iPad.</p><ul><li>Separate navigation paths and support for deep links</li><li>Optional inspector and accessible themes</li></ul><p><a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/AdaptiveAppShell/blob/main/README.md">Integration notes</a></p></td></tr></tbody></table>
 
-<p align="center">
-  <a href="https://github.com/mikonyaa/Apple-Design-Templates">
-    <img src="./.github/banner-04-liquid-glass.png" alt="Apple Design Templates" width="100%" />
-  </a>
-</p>
+<sub>Previews are from the repositories: demo GIFs with sample data, a ResizeLint terminal example, and an Adaptive App Shell simulator screenshot.</sub>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=flat-square&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apple_HIG-111827?style=flat-square&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apple_Platforms-0A84FF?style=flat-square&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Open_Source-2563EB?style=flat-square&logo=github&logoColor=white" />
-</p>
+### More on the shelf
 
-<p align="center">
-  Production-ready open-source SwiftUI templates and developer tools
-</p>
+<table>
+<thead><tr><th align="left">Repository</th><th align="left">What's inside</th></tr></thead>
+<tbody>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/folder-dark.svg"><img src="./assets/icons/folder-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/LiquidGlassTabBars">Liquid Glass Tab Bars</a></td><td>Three tab bar patterns: system, floating, and morphing. Includes accessibility fallbacks.</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/terminal-dark.svg"><img src="./assets/icons/terminal-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">Live Activity & Dynamic Island Kit</a></td><td>Live Activity layouts for the Lock Screen and Dynamic Island, plus a demo for updating and ending them.</td></tr>
+<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/github-dark.svg"><img src="./assets/icons/github-light.svg" width="20" height="20" alt=""></picture> <a href="https://github.com/mikonyaa/Apple-Design-Templates">Apple Design Templates</a></td><td>An index of four SwiftUI kits, with examples and setup notes.</td></tr>
+</tbody>
+</table>
 
-<br />
+[Browse every repository →](https://github.com/mikonyaa?tab=repositories)
 
-<h3 align="center">🛠 Tech Stack</h3>
+---
 
-<p align="center">
-  <b>Apple Development</b>
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=swift,apple&theme=light" alt="Apple Development Stack" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" />
-  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/UIKit-111827?style=for-the-badge&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Objective--C-438EFF?style=for-the-badge&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apple_HIG-000000?style=for-the-badge&logo=apple&logoColor=white" />
-</p>
-
-<p align="center">
-  Swift · SwiftUI · UIKit · Objective-C · Xcode · iOS · iPadOS · macOS · watchOS · visionOS · SF Symbols · Apple HIG · TestFlight
-</p>
-
-<br />
-
-<p align="center">
-  <b>Backend, Databases & Automation</b>
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,nodejs,express,nextjs,postgres,mysql,sqlite,git,github,docker&theme=light" alt="Backend Databases Automation Stack" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/REST_API-111827?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Automation-2563EB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI_Workflows-000000?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-</p>
-
-<p align="center">
-  Python · TypeScript · JavaScript · Node.js · Express · Next.js · SQL · PostgreSQL · MySQL · SQLite · REST API · Automation · AI Workflows · Git · GitHub · GitHub Actions · Docker
-</p>
-
-<br />
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=mikonyaa&theme=tokyonight&hide_border=true&border_radius=12&hide_total_contributions=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/mikonyaa/mikonyaa/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
+<p align="center"><img src="./assets/goose-honk.gif" width="56" alt="The resident goose."><br><sub>The goose is not on the payroll.</sub></p>
