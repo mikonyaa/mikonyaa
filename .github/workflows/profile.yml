@@ -1,0 +1,48 @@
+name: Refresh profile
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # every day, 09:17 in Astana
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/profile/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render profile SVGs
+        env:
+          # Optional: add a classic PAT (read:user) as METRICS_TOKEN to include
+          # private contribution counts. Otherwise the default token is used.
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/profile/build.py --login "${{ github.repository_owner }}" --out assets/profile
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore(profile): refresh widgets"
+            git push
+          fi

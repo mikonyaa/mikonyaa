@@ -1,49 +1,83 @@
-<p><img src="./assets/goose-night.png" width="100%" alt="A goose at a vintage computer desk under a lamp, with a moonlit city outside the window."></p>
+<!--
+  miko in Xcode. Everything in assets/profile/ is drawn by scripts/profile/build.py;
+  .github/workflows/profile.yml redraws the live numbers every day.
+-->
 
-<p><img src="./assets/goose-honk.gif" width="40" align="absmiddle" alt="A little goose honking."> &nbsp; Apps, tools, and side projects.</p>
+<img src="./assets/profile/xcode.svg" width="100%" alt="miko in Xcode: ProfileView.swift next to a live iPhone preview of the profile with stats, projects and a floating tab bar.">
 
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/map-contact-dark.svg"><img src="./assets/icons/aligned/map-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> Astana, Kazakhstan &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/message-contact-dark.svg"><img src="./assets/icons/aligned/message-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://t.me/mikonyaa">Telegram</a> &nbsp; · &nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/mail-contact-dark.svg"><img src="./assets/icons/aligned/mail-contact-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="mailto:dev.miko@icloud.com">Email</a></p>
+<p align="center">
+  <a href="https://t.me/mikonyaa">Telegram</a> &nbsp;·&nbsp;
+  <a href="mailto:dev.miko@icloud.com">dev.miko@icloud.com</a> &nbsp;·&nbsp;
+  Astana, Kazakhstan
+</p>
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/coffee-section-dark.svg"><img src="./assets/icons/aligned/coffee-section-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> About me
+## About
 
-I'm a software developer working with Swift and Python. I focus on native applications, developer tools, and automation.
+I'm a software developer working with Swift and Python. I build native apps for Apple platforms, developer tools that catch problems before users do, and small automations so I don't have to do the same thing twice.
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/keyboard-section-dark.svg"><img src="./assets/icons/aligned/keyboard-section-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> My toolbox
+Lately that means SwiftUI kits and command-line checks that run in CI.
 
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/swift-stack-dark.svg"><img src="./assets/icons/aligned/swift-stack-light.svg" width="28" height="28" align="absmiddle" alt=""></picture> <strong>Swift</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/python-stack-dark.svg"><img src="./assets/icons/aligned/python-stack-light.svg" width="28" height="28" align="absmiddle" alt=""></picture> <strong>Python</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/postgresql-stack-dark.svg"><img src="./assets/icons/aligned/postgresql-stack-light.svg" width="28" height="28" align="absmiddle" alt=""></picture> <strong>PostgreSQL</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/git-stack-dark.svg"><img src="./assets/icons/aligned/git-stack-light.svg" width="28" height="28" align="absmiddle" alt=""></picture> <strong>Git</strong> &nbsp;&nbsp; <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/docker-stack-dark.svg"><img src="./assets/icons/aligned/docker-stack-light.svg" width="28" height="28" align="absmiddle" alt=""></picture> <strong>Docker</strong></p>
+## Projects
 
+<p align="center">
+  <a href="https://github.com/mikonyaa/Apple-Design-Templates"><img src="./assets/profile/project-apple-design-templates.svg" width="49%" alt="Apple Design Templates: curated SwiftUI templates for polished Apple-platform interfaces."></a>
+  <a href="https://github.com/mikonyaa/LiquidGlassTabBars"><img src="./assets/profile/project-liquid-glass-tab-bars.svg" width="49%" alt="Liquid Glass Tab Bars: native, floating and morphing tab bars for SwiftUI."></a>
+  <a href="https://github.com/mikonyaa/AdaptiveAppShell"><img src="./assets/profile/project-adaptive-app-shell.svg" width="49%" alt="Adaptive App Shell: tabs on iPhone, a sidebar and inspector on iPad."></a>
+  <a href="https://github.com/mikonyaa/MacMenuBarCommandKit"><img src="./assets/profile/project-menu-bar-command-kit.svg" width="49%" alt="Menu Bar Command Kit: a macOS menu bar app with a command palette."></a>
+  <a href="https://github.com/mikonyaa/ResizeLint"><img src="./assets/profile/project-resizelint.svg" width="49%" alt="ResizeLint: finds layout code that breaks when a window is resized."></a>
+  <a href="https://github.com/mikonyaa/fontwitness"><img src="./assets/profile/project-fontwitness.svg" width="49%" alt="FontWitness: shows which fonts Chromium actually rendered and fails CI on a fallback."></a>
+</p>
+
+<details>
+<summary><b>More on the shelf</b></summary>
+<br>
+
+**Apple platform kits**
+- [Live Activity & Dynamic Island Kit](https://github.com/mikonyaa/LiveActivityDynamicIslandKit) · ActivityKit and Dynamic Island template with a real WidgetKit demo
+- [nativecraft-verify](https://github.com/mikonyaa/nativecraft-verify) · an inspectable XCTest recipe for SwiftUI preferences
+
+**Testing and developer tools**
+- [skillparcel](https://github.com/mikonyaa/skillparcel) · test what Claude Code actually loads from skill contracts
+- [mcpclientcanary](https://github.com/mikonyaa/mcpclientcanary) · reproduce MCP client state regressions with evidence
+- [tracesharegate](https://github.com/mikonyaa/tracesharegate) · minimal debugging reports from Playwright traces
+- [chronocases](https://github.com/mikonyaa/chronocases) · regression cases for dates, timezones and recurring schedules
+- [slidetransit](https://github.com/mikonyaa/slidetransit) · compare presentation exports and find delivery regressions
+- [originrehearsal](https://github.com/mikonyaa/originrehearsal) · rehearse web-app upgrades with retained browser profiles
+- [cuereviewkit](https://github.com/mikonyaa/cuereviewkit) · review source and translated subtitles before delivery
+
+**Everything else**
+- [lessonroutes](https://github.com/mikonyaa/lessonroutes) · turn screenshots into small branching practice lessons
+- [roundrelay](https://github.com/mikonyaa/roundrelay) · run workshop rounds and repair groups when attendance changes
+- [homebrew-tap](https://github.com/mikonyaa/homebrew-tap) · the Homebrew tap for ResizeLint
+
+</details>
+
+<details>
+<summary><b>Demos</b> · recordings from the repositories</summary>
+<br>
 <table>
-<thead><tr><th align="left">Area</th><th align="left">What I work with</th></tr></thead>
-<tbody>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/code-area-dark.svg"><img src="./assets/icons/aligned/code-area-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <strong>Languages</strong></td><td>Swift · Python · Objective-C · SQL</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/apple-area-dark.svg"><img src="./assets/icons/aligned/apple-area-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <strong>Native apps</strong></td><td>SwiftUI · UIKit · Xcode<br>iOS · iPadOS · macOS · watchOS · visionOS</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/sqlite-area-dark.svg"><img src="./assets/icons/aligned/sqlite-area-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <strong>Databases</strong></td><td>PostgreSQL · MySQL · SQLite</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/githubactions-area-dark.svg"><img src="./assets/icons/aligned/githubactions-area-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <strong>Automation & workflow</strong></td><td>Python automation · AI workflows<br>Git · GitHub · GitHub Actions · Docker</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/xcode-area-dark.svg"><img src="./assets/icons/aligned/xcode-area-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <strong>Design & delivery</strong></td><td>SF Symbols · Apple HIG · TestFlight</td></tr>
-</tbody>
+  <tr>
+    <td width="50%"><a href="https://github.com/mikonyaa/fontwitness"><img src="./assets/fontwitness-demo.gif" width="100%" alt="FontWitness demo: broken font delivery, a measured mismatch, and a passing audit after the fix."></a><br><sub><b>FontWitness</b> · an audit before and after a fix</sub></td>
+    <td width="50%"><a href="https://github.com/mikonyaa/MacMenuBarCommandKit"><img src="./assets/mac-menu-bar-demo.gif" width="100%" alt="Menu Bar Command Kit demo: workspace, menu dashboard, command palette and settings."></a><br><sub><b>Menu Bar Command Kit</b> · workspace, palette, settings</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/mikonyaa/ResizeLint"><img src="./assets/resizelint-demo.png" width="100%" alt="ResizeLint terminal output with an RL001 finding and a suggested fix."></a><br><sub><b>ResizeLint</b> · a layout finding and its fix</sub></td>
+    <td width="50%"><a href="https://github.com/mikonyaa/AdaptiveAppShell"><img src="./assets/adaptive-shell-preview.png" width="100%" alt="Adaptive App Shell on iPad with a sidebar and inspector."></a><br><sub><b>Adaptive App Shell</b> · iPad sidebar and inspector</sub></td>
+  </tr>
 </table>
+</details>
 
-<p><a href="https://github.com/mikonyaa?tab=repositories"><img src="./assets/workbench.png" width="100%" alt="The workbench: apps, tools, utilities and miscellaneous projects. Open all repositories."></a></p>
+## Toolbox
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/folder-section-dark.svg"><img src="./assets/icons/aligned/folder-section-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> Projects on the desk
+<img src="./assets/profile/spotlight.svg" width="100%" alt="Spotlight search for miko's toolbox: Swift, Python, TypeScript, SwiftUI, Xcode, GitHub Actions, Docker and PostgreSQL.">
 
-<table><tbody><tr><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/terminal-project-dark.svg"><img src="./assets/icons/aligned/terminal-project-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/fontwitness">FontWitness</a></h3><p><sub>CLI · font checks</sub></p><p><a href="https://github.com/mikonyaa/fontwitness"><img src="./assets/fontwitness-demo.gif" width="100%" alt="Recorded FontWitness demo using its synthetic fixture: broken font delivery, a measured mismatch, and a successful audit after repair."></a></p><p>Shows which fonts Chromium actually used and checks them against the expected ones.</p><ul><li>Reports you can open offline</li><li>Font checks that can fail a CI build</li></ul><p><a href="https://github.com/mikonyaa/fontwitness">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/fontwitness/blob/main/README.md">How it works</a></p></td><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/code-project-dark.svg"><img src="./assets/icons/aligned/code-project-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/ResizeLint">ResizeLint</a></h3><p><sub>Swift · static analysis</sub></p><p><a href="https://github.com/mikonyaa/ResizeLint"><img src="./assets/resizelint-demo.png" width="100%" alt="ResizeLint terminal example from the project repository, showing an RL001 layout finding and remediation."></a></p><p>Checks Swift source for UIKit layout code that can break when a window is resized.</p><ul><li>9 layout rules, with suggested fixes</li><li>Xcode messages, JSON, and SARIF output</li></ul><p><a href="https://github.com/mikonyaa/ResizeLint">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/ResizeLint/blob/main/Docs/Rules/README.md">Browse rules</a></p></td></tr><tr><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/keyboard-project-dark.svg"><img src="./assets/icons/aligned/keyboard-project-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/MacMenuBarCommandKit">Menu Bar Command Kit</a></h3><p><sub>SwiftUI · macOS</sub></p><p><a href="https://github.com/mikonyaa/MacMenuBarCommandKit"><img src="./assets/mac-menu-bar-demo.gif" width="100%" alt="Recorded MacMenuBarCommandKit demo states: workspace, menu dashboard, command palette and settings."></a></p><p>SwiftUI kit for a macOS app with a main window, menu bar controls, and a command palette.</p><ul><li>Search commands and navigate with the keyboard</li><li>Settings and Launch at Login</li></ul><p><a href="https://github.com/mikonyaa/MacMenuBarCommandKit">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/MacMenuBarCommandKit/blob/main/README.md">Demo guide</a></p></td><td width="50%" valign="top"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/folder-project-dark.svg"><img src="./assets/icons/aligned/folder-project-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/AdaptiveAppShell">Adaptive App Shell</a></h3><p><sub>SwiftUI · iPhone and iPad</sub></p><p><a href="https://github.com/mikonyaa/AdaptiveAppShell"><img src="./assets/adaptive-shell-preview.png" width="100%" alt="Adaptive App Shell iPad simulator screenshot from the project repository, showing a sidebar and inspector."></a></p><p>SwiftUI app shell with tabs on iPhone and a sidebar on iPad.</p><ul><li>Separate navigation paths and support for deep links</li><li>Optional inspector and accessible themes</li></ul><p><a href="https://github.com/mikonyaa/AdaptiveAppShell">Repository →</a> &nbsp; · &nbsp; <a href="https://github.com/mikonyaa/AdaptiveAppShell/blob/main/README.md">Integration notes</a></p></td></tr></tbody></table>
+**Languages** · Swift, Python, TypeScript, Objective-C, SQL<br>
+**Apple platforms** · SwiftUI, UIKit, Xcode · iOS, iPadOS, macOS, watchOS, visionOS<br>
+**Data** · PostgreSQL, MySQL, SQLite<br>
+**Workflow** · Git, GitHub Actions, Docker, AI workflows
 
-<sub>Previews are from the repositories: demo GIFs with sample data, a ResizeLint terminal example, and an Adaptive App Shell simulator screenshot.</sub>
+## Activity
 
-### More on the shelf
+<img src="./assets/profile/activity.svg" width="100%" alt="Activity: contributions over the last year as a weekly chart, with commits, pull requests, stars, followers, streaks and languages.">
 
-<table>
-<thead><tr><th align="left">Repository</th><th align="left">What's inside</th></tr></thead>
-<tbody>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/folder-shelf-dark.svg"><img src="./assets/icons/aligned/folder-shelf-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/LiquidGlassTabBars">Liquid Glass Tab Bars</a></td><td>Three tab bar patterns: system, floating, and morphing. Includes accessibility fallbacks.</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/terminal-shelf-dark.svg"><img src="./assets/icons/aligned/terminal-shelf-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/LiveActivityDynamicIslandKit">Live Activity & Dynamic Island Kit</a></td><td>Live Activity layouts for the Lock Screen and Dynamic Island, plus a demo for updating and ending them.</td></tr>
-<tr><td><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/aligned/github-shelf-dark.svg"><img src="./assets/icons/aligned/github-shelf-light.svg" width="20" height="20" align="absmiddle" alt=""></picture> <a href="https://github.com/mikonyaa/Apple-Design-Templates">Apple Design Templates</a></td><td>An index of four SwiftUI kits, with examples and setup notes.</td></tr>
-</tbody>
-</table>
-
-[Browse every repository →](https://github.com/mikonyaa?tab=repositories)
-
----
-
-<p align="center"><img src="./assets/goose-honk.gif" width="56" alt="The resident goose."><br><sub>The goose is not on the payroll.</sub></p>
+<img src="./assets/profile/messages.svg" width="100%" alt="A Messages conversation with miko: thanks for stopping by; say hi on Telegram @mikonyaa or at dev.miko@icloud.com.">
