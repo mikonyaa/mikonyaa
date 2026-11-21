@@ -68,6 +68,8 @@ Lately that means SwiftUI kits and command-line checks that run in CI.
 </table>
 </details>
 
+<img src="./assets/profile/playground.svg" width="100%" alt="Swift Playgrounds, a page called Ship It: a for loop walks Miko across a small island, collects three gems and toggles the switch.">
+
 ## Stack
 
 <img src="./assets/profile/stack.svg" width="100%" alt="Stack. Languages: Swift, Python, TypeScript, Objective-C, SQL. Apple platforms: SwiftUI, UIKit, Liquid Glass, WidgetKit, ActivityKit, MenuBarExtra, NavigationSplitView, visionOS. Backend: FastAPI and Vapor, REST and JSON. Web: React, Next.js, Vite, Tailwind CSS, Motion. Testing: Playwright, Vitest, axe-core, XCTest. Data: PostgreSQL, MySQL, SQLite. Swift tooling: SwiftSyntax, ArgumentParser, XcodeGen, SwiftPM, Xcode. Ship: Git, GitHub Actions, Docker, Homebrew.">

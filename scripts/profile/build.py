@@ -4,8 +4,8 @@
     GH_TOKEN=... python scripts/profile/build.py --out assets/profile
     python scripts/profile/build.py --data data.json --out assets/profile     # offline
 
-Writes: xcode.svg (hero), contact-*.svg (links), project-*.svg (cards), stack.svg, activity.svg (numbers)
-and console.svg (footer).
+Writes: xcode.svg (hero), contact-*.svg (links), project-*.svg (cards), playground.svg (Swift Playgrounds),
+stack.svg, activity.svg (numbers) and console.svg (footer).
 """
 from __future__ import annotations
 
@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import data  # noqa: E402
 import extras  # noqa: E402
+import playground  # noqa: E402
 import projects  # noqa: E402
 import showcase  # noqa: E402
 import stats  # noqa: E402
@@ -41,7 +42,8 @@ def main():
     os.makedirs(a.out, exist_ok=True)
     by = {r["name"]: r for r in d["repos"]}
     files = {"xcode.svg": xcode.xcode(d), "stack.svg": showcase.stack(d),
-             "activity.svg": stats.activity(d), "console.svg": showcase.console(d)}
+             "activity.svg": stats.activity(d), "console.svg": showcase.console(d),
+             "playground.svg": playground.playground(d)}
     for k in ("telegram", "email", "location"):
         files[f"contact-{k}.svg"] = extras.contact(k)
     for pr in projects.PROJECTS:

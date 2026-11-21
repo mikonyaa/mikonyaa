@@ -160,7 +160,7 @@ def bust(x, y, s, pid, wave=False, smile="open", eyes="open"):
             + _bob(head(pid, smile, eyes), amp=1.4, dur=3.0) + f'{arm}</g>')
 
 
-def desk(x, y, s, pid):
+def desk(x, y, s, pid, smile="soft", eyes="open"):
     """Behind a desk (desk top at local y=96), typing on a laptop facing him."""
     sleeves = "".join(
         f'<path d="M{36*sx},62 C{50*sx},68 {54*sx},84 {44*sx},96 L{30*sx},96 L{28*sx},74Z" fill="{HOOD}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
@@ -173,4 +173,22 @@ def desk(x, y, s, pid):
            f'<path d="M-31,67 h30 l-11,29 h-19z" fill="#ffffff" opacity="0.35"/>'
            f'<circle cx="0" cy="80" r="5" fill="#fff" stroke="{LAPTOP2}" stroke-width="1.5"><animate attributeName="opacity" values="0.55;1;0.55" dur="3.6s" repeatCount="indefinite"/></circle>')
     return (f'<g transform="translate({x:g} {y:g}) scale({s:g})">{_torso()}{sleeves}'
-            + _bob(head(pid), amp=1.2, dur=3.4) + typing + lap + '</g>')
+            + _bob(head(pid, smile, eyes), amp=1.2, dur=3.4) + typing + lap + '</g>')
+
+
+def standing(x, y, s, pid, smile="open", eyes="open", walk=False):
+    """Standing, arms down; (x, y) is the head centre, feet at local y=176."""
+    legs = []
+    for sx in (-1, 1):
+        x0 = 13 * sx
+        legs.append(f'<path d="M{x0-8},132 L{x0+8},132 L{x0+7},160 L{x0-7},160Z" fill="{SKIN}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
+                    f'<path d="M{x0-8},154 h16 v10 h-16z" fill="{WHITE}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
+                    f'<path d="M{x0-10},164 h18 c5,0 9,4 9,8 v4 h-28 c-2,0 -2,-8 1,-12z" fill="{WHITE}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
+                    f'<path d="M{x0-11},172 h28" stroke="{SOLE}" stroke-width="3"/>')
+    if walk:
+        legs = [f'<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="0.5s" begin="{0.25*i}s" '
+                f'repeatCount="indefinite"/>{l}</g>' for i, l in enumerate(legs)]
+    sleeves = "".join(f'<path d="M{36*sx},62 C{50*sx},70 {50*sx},96 {44*sx},110 L{32*sx},110 L{30*sx},72Z" fill="{HOOD}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
+                      f'<ellipse cx="{38*sx}" cy="114" rx="7" ry="6.5" fill="{SKIN}" stroke="{OL}" stroke-width="{SW-0.6}"/>' for sx in (-1, 1))
+    body = "".join(legs) + _shorts() + _torso() + sleeves
+    return (f'<g transform="translate({x:g} {y:g}) scale({s:g})">{body}' + _bob(head(pid, smile, eyes), amp=1.4, dur=2.6) + '</g>')
