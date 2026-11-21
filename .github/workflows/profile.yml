@@ -2,7 +2,7 @@ name: Refresh profile
 
 on:
   schedule:
-    - cron: "17 3 * * *" # every day, 09:17 in Astana
+    - cron: "17 3,15 * * *" # twice a day: 09:17 and 21:17 in Astana
   workflow_dispatch:
   push:
     branches: [main]

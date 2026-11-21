@@ -51,12 +51,19 @@ def _eye(cx, cy, pid, k, blink_dur=5.2, begin=0.0):
     return f'<g transform="translate({cx} {cy})"><g>{a}<g transform="translate({-cx} {-cy})">{body}</g></g></g>'
 
 
-def head(pid, smile="soft"):
-    """The head in local coordinates."""
-    mouth = ('<path d="M-5.5,28 Q0,33 5.5,28" stroke="#7a3b2e" stroke-width="2.4" fill="none" stroke-linecap="round"/>'
-             if smile == "soft" else
-             '<path d="M-7,26 Q0,36 7,26 Z" fill="#7a3b2e" stroke="#7a3b2e" stroke-width="1.5" stroke-linejoin="round"/>'
-             '<path d="M-4,30.5 Q0,33.5 4,30.5" fill="#ff8f80"/>')
+def head(pid, smile="soft", eyes="open"):
+    """The head in local coordinates. smile: soft | open | o | flat; eyes: open | closed | happy."""
+    mouth = {"soft": '<path d="M-5.5,28 Q0,33 5.5,28" stroke="#7a3b2e" stroke-width="2.4" fill="none" stroke-linecap="round"/>',
+             "open": '<path d="M-7,26 Q0,36 7,26 Z" fill="#7a3b2e" stroke="#7a3b2e" stroke-width="1.5" stroke-linejoin="round"/>'
+                     '<path d="M-4,30.5 Q0,33.5 4,30.5" fill="#ff8f80"/>',
+             "o": '<ellipse cx="0" cy="30" rx="4.6" ry="5.6" fill="#7a3b2e"/><ellipse cx="0" cy="32" rx="2.6" ry="2.2" fill="#ff8f80"/>',
+             "flat": '<path d="M-6,29 H6" stroke="#7a3b2e" stroke-width="2.4" stroke-linecap="round"/>'}[smile]
+    if eyes == "open":
+        eye_svg = _eye(-19, 10, pid, "l") + _eye(19, 10, pid, "r")
+    elif eyes == "closed":
+        eye_svg = "".join(f'<path d="M{x-8},{10} Q{x},{17} {x+8},{10}" stroke="#2b1b17" stroke-width="2.8" fill="none" stroke-linecap="round"/>' for x in (-19, 19))
+    else:  # happy: upside-down arcs
+        eye_svg = "".join(f'<path d="M{x-8},{13} Q{x},{3} {x+8},{13}" stroke="#2b1b17" stroke-width="3" fill="none" stroke-linecap="round"/>' for x in (-19, 19))
     return (f'<defs><clipPath id="{pid}-face"><path d="{FACE}"/></clipPath></defs>'
             f'<path d="{BACK_HAIR}" fill="{HAIR2}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
             f'<path d="M-9,40 h18 v16 h-18z" fill="{SKIN2}"/>'
@@ -64,7 +71,7 @@ def head(pid, smile="soft"):
             f'<g clip-path="url(#{pid}-face)"><path d="{FRONT_HAIR}" transform="translate(0 6)" fill="{SKIN2}" opacity="0.75"/></g>'
             f'<ellipse cx="-31" cy="22" rx="8.5" ry="4.6" fill="{BLUSH}" opacity="0.45"/>'
             f'<ellipse cx="31" cy="22" rx="8.5" ry="4.6" fill="{BLUSH}" opacity="0.45"/>'
-            + _eye(-19, 10, pid, "l") + _eye(19, 10, pid, "r") +
+            + eye_svg +
             f'<path d="M0,17 l-1.2,3.2" stroke="{SKIN2}" stroke-width="2" stroke-linecap="round"/>' + mouth +
             f'<path d="{FRONT_HAIR}" fill="{HAIR}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
             f'<path d="{HAIR_SHEEN}" fill="{HAIR_HI}" opacity="0.75"/>'
@@ -135,7 +142,7 @@ def sitting(x, y, s, pid):
             + _bob(head(pid), amp=1.4, dur=3.4) + '</g>')
 
 
-def bust(x, y, s, pid, wave=False, smile="open"):
+def bust(x, y, s, pid, wave=False, smile="open", eyes="open"):
     torso = _torso()
     arm = ""
     if wave:
@@ -150,7 +157,7 @@ def bust(x, y, s, pid, wave=False, smile="open"):
                + f'<g transform="translate(14 6)">{hand}</g>')
     left = f'<path d="M-34,62 C-46,70 -48,96 -44,114 L-30,114 L-30,74Z" fill="{HOOD}" stroke="{OL}" stroke-width="{SW}" stroke-linejoin="round"/>'
     return (f'<g transform="translate({x:g} {y:g}) scale({s:g})">{left}{torso}'
-            + _bob(head(pid, smile), amp=1.4, dur=3.0) + f'{arm}</g>')
+            + _bob(head(pid, smile, eyes), amp=1.4, dur=3.0) + f'{arm}</g>')
 
 
 def desk(x, y, s, pid):

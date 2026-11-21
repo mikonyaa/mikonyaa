@@ -1,19 +1,20 @@
 <!--
   miko in Xcode. Everything in assets/profile/ is drawn by scripts/profile/build.py;
-  .github/workflows/profile.yml redraws the live numbers every day.
+  .github/workflows/profile.yml redraws the live numbers twice a day.
 -->
 
 <img src="./assets/profile/xcode.svg" width="100%" alt="miko in Xcode: ProfileView.swift next to a live iPhone preview of the profile with stats, projects and a floating tab bar.">
 
 <p align="center">
-  <a href="https://t.me/mikonyaa">Telegram</a> &nbsp;·&nbsp;
-  <a href="mailto:dev.miko@icloud.com">dev.miko@icloud.com</a> &nbsp;·&nbsp;
-  Astana, Kazakhstan
+  <a href="https://t.me/mikonyaa"><img src="./assets/profile/contact-telegram.svg" height="46" alt="Telegram: @mikonyaa"></a>
+  <a href="mailto:dev.miko@icloud.com"><img src="./assets/profile/contact-email.svg" height="46" alt="Email: dev.miko@icloud.com"></a>
+  <img src="./assets/profile/contact-location.svg" height="46" alt="Based in Astana, Kazakhstan">
 </p>
 
 ## About
 
 I'm a software developer working with Swift and Python. I build native apps for Apple platforms, developer tools that catch problems before users do, and small automations so I don't have to do the same thing twice.
+On the server side I write APIs with Vapor and FastAPI.
 
 Lately that means SwiftUI kits and command-line checks that run in CI.
 
@@ -67,17 +68,12 @@ Lately that means SwiftUI kits and command-line checks that run in CI.
 </table>
 </details>
 
-## Toolbox
+## Stack
 
-<img src="./assets/profile/spotlight.svg" width="100%" alt="Spotlight search for miko's toolbox: Swift, Python, TypeScript, SwiftUI, Xcode, GitHub Actions, Docker and PostgreSQL.">
-
-**Languages** · Swift, Python, TypeScript, Objective-C, SQL<br>
-**Apple platforms** · SwiftUI, UIKit, Xcode · iOS, iPadOS, macOS, watchOS, visionOS<br>
-**Data** · PostgreSQL, MySQL, SQLite<br>
-**Workflow** · Git, GitHub Actions, Docker, AI workflows
+<img src="./assets/profile/stack.svg" width="100%" alt="Stack. Languages: Swift, Python, TypeScript, Objective-C, SQL. Apple platforms: SwiftUI, UIKit, Liquid Glass, WidgetKit, ActivityKit, MenuBarExtra, NavigationSplitView, visionOS. Backend: FastAPI and Vapor, REST and JSON. Web: React, Next.js, Vite, Tailwind CSS, Motion. Testing: Playwright, Vitest, axe-core, XCTest. Data: PostgreSQL, MySQL, SQLite. Swift tooling: SwiftSyntax, ArgumentParser, XcodeGen, SwiftPM, Xcode. Ship: Git, GitHub Actions, Docker, Homebrew.">
 
 ## Activity
 
-<img src="./assets/profile/activity.svg" width="100%" alt="Activity: contributions over the last year as a weekly chart, with commits, pull requests, stars, followers, streaks and languages.">
+<img src="./assets/profile/activity.svg" width="100%" alt="Activity: all-time contributions, the last 12 months, merged pull requests and other repositories contributed to; a year of contributions with the longest streak and the best day marked; and personal records.">
 
-<img src="./assets/profile/messages.svg" width="100%" alt="A Messages conversation with miko: thanks for stopping by; say hi on Telegram @mikonyaa or at dev.miko@icloud.com.">
+<img src="./assets/profile/console.svg" width="100%" alt="An Xcode console: visitor.scroll(to: .bottom); it was supposed to be a quick stop; po miko.contacts prints t.me/mikonyaa and dev.miko@icloud.com. Miko sits on top of the window with a laptop.">

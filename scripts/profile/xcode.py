@@ -57,7 +57,7 @@ def toolbar(D, C, x, y, w):
                + app_icon(D, "swift", sx + 7, y + 17, 18)
                + text(sx + 32, y + 30.5, "miko", 12.5, FG, "sans", 600) + text(sx + 66, y + 30.5, "›", 12.5, FG3, "sans", 600)
                + f'<rect x="{sx+80}" y="{y+19}" width="9" height="14" rx="2.2" stroke="#d1d1d6" stroke-width="1.3"/>'
-               + text(sx + 96, y + 30.5, "iPhone 16 Pro", 12.5, FG, "sans", 500))
+               + text(sx + 96, y + 30.5, "iPhone 18 Pro", 12.5, FG, "sans", 500))
     # activity view: Building… → Build Succeeded
     ax, aw = x + w / 2 - 60, 330
     out.append(f'<rect x="{f1(ax)}" y="{y+12}" width="{aw}" height="28" rx="7" fill="#1c1c1f" stroke="#fff" stroke-opacity="0.08"/>')
@@ -186,10 +186,10 @@ def phone_screen(D, C, d, sx, sy, sw, sh, sel_steps):
     s.append(text(sx + 18, sy + 106, "Software, tools & side projects", 11.5, "#98989f", "sans", 500))
     s.append(f'<g transform="translate({sx+18} {sy+114})"><path d="M5 0 a5 5 0 0 1 5 5 c0 4 -5 9 -5 9 s-5 -5 -5 -9 a5 5 0 0 1 5 -5z" fill="#0a84ff"/>'
              f'<circle cx="5" cy="5" r="1.8" fill="#000"/></g>' + text(sx + 34, sy + 126, "Astana, Kazakhstan", 11.5, "#d1d1d6", "sans", 500))
-    acx, acy, ar = sx + sw - 44, sy + 80, 26
+    acx, acy, ar = sx + sw - 40, sy + 62, 22
     D.adddef(f'<clipPath id="{p}-pav"><circle cx="{acx}" cy="{acy}" r="{ar}"/></clipPath>',
              f'<linearGradient id="{p}-pavbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb4ff"/><stop offset="1" stop-color="#ff9fb0"/></linearGradient>')
-    s.append(f'<circle cx="{acx}" cy="{acy}" r="{ar}" fill="url(#{p}-pavbg)"/><g clip-path="url(#{p}-pav)">{chibi.bust(acx, acy-1, 0.36, p+"pa", smile="open")}</g>')
+    s.append(f'<circle cx="{acx}" cy="{acy}" r="{ar}" fill="url(#{p}-pavbg)"/><g clip-path="url(#{p}-pav)">{chibi.bust(acx, acy-1, 0.31, p+"pa", smile="open")}</g>')
     # stats
     stats = [(str(d["stars"]), "Stars"), (f"{d['followers']/1000:.1f}k", "Followers"), (str(d["repo_count"]), "Repos")]
     pw = (sw - 36 - 16) / 3
@@ -257,9 +257,9 @@ def xcode(d):
     sw, sh = 252, 540
     sx, sy = cv_x + (can_w - sw) / 2, body_y + 54
     # selection steps: (time, first line, n lines, preview box in screen coords)
-    steps = [(0.0, 9, 3, (10, 52, sw - 20, 84)), (2.6, 9, 3, (10, 52, sw - 20, 84)), (3.2, 12, 1, (12, 138, sw - 24, 60)),
+    steps = [(0.0, 9, 3, (8, 34, sw - 16, 102)), (2.6, 9, 3, (8, 34, sw - 16, 102)), (3.2, 12, 1, (12, 138, sw - 24, 60)),
              (5.8, 12, 1, (12, 138, sw - 24, 60)), (6.4, 13, 4, (10, 206, sw - 20, 222)), (9.6, 13, 4, (10, 206, sw - 20, 222)),
-             (10.2, 21, 1, (12, sh - 78, sw - 24, 62)), (15.4, 21, 1, (12, sh - 78, sw - 24, 62)), (15.95, 9, 3, (10, 52, sw - 20, 84))]
+             (10.2, 21, 1, (12, sh - 78, sw - 24, 62)), (15.4, 21, 1, (12, sh - 78, sw - 24, 62)), (15.95, 9, 3, (8, 34, sw - 16, 102))]
     inner = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#1f1f24"/>',
              toolbar(D, C, x, y, w),
              navigator(D, x, body_y, nav_w, body_h),

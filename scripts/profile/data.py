@@ -9,7 +9,9 @@ import urllib.request
 QUERY = """
 query($login: String!) {
   user(login: $login) {
-    login name
+    login name createdAt
+    allPullRequests: pullRequests { totalCount }
+    repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST], includeUserRepositories: false) { totalCount }
     followers { totalCount }
     following { totalCount }
     pullRequests(states: MERGED) { totalCount }
@@ -17,14 +19,19 @@ query($login: String!) {
                  orderBy: {field: STARGAZERS, direction: DESC}) {
       totalCount
       nodes {
-        name description url stargazerCount forkCount isTemplate
+        name description url stargazerCount forkCount isTemplate pushedAt
         primaryLanguage { name color }
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } }
       }
     }
     contributionsCollection {
+      contributionYears
       totalCommitContributions totalPullRequestContributions totalIssueContributions
-      totalPullRequestReviewContributions restrictedContributionsCount
+      totalPullRequestReviewContributions restrictedContributionsCount totalRepositoryContributions
+      commitContributionsByRepository(maxRepositories: 10) {
+        repository { name nameWithOwner url isPrivate primaryLanguage { name color } }
+        contributions { totalCount }
+      }
       contributionCalendar { totalContributions weeks { contributionDays { date contributionCount weekday } } }
     }
   }
@@ -41,6 +48,18 @@ def fetch(login: str, token: str) -> dict:
         payload = json.load(r)
     if payload.get("errors"):
         raise SystemExit(f"GraphQL error: {payload['errors']}")
+    # one more call: the calendar total for every year (GitHub only answers one year per collection)
+    years = [y for y in payload["data"]["user"]["contributionsCollection"].get("contributionYears", []) if 2008 <= y <= dt.date.today().year]
+    if years:
+        parts = " ".join(f'y{y}: contributionsCollection(from: "{y}-01-01T00:00:00Z", to: "{y}-12-31T23:59:59Z") '
+                         "{ contributionCalendar { totalContributions } }" for y in years)
+        q = "query($login: String!) { user(login: $login) { " + parts + " } }"
+        req = urllib.request.Request("https://api.github.com/graphql", data=json.dumps({"query": q, "variables": {"login": login}}).encode(),
+                                     headers={"Authorization": f"bearer {token}", "Content-Type": "application/json", "User-Agent": f"{login}-profile-readme"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            yp = json.load(r)
+        if not yp.get("errors"):
+            payload["data"]["user"]["yearTotals"] = {k[1:]: v["contributionCalendar"]["totalContributions"] for k, v in yp["data"]["user"].items()}
     return payload
 
 
@@ -51,7 +70,7 @@ def normalize(payload: dict) -> dict:
         pl = n.get("primaryLanguage") or {}
         repos.append(dict(name=n["name"], description=n.get("description") or "", url=n["url"],
                           stars=n["stargazerCount"], forks=n["forkCount"], template=n.get("isTemplate", False),
-                          language=pl.get("name"), lang_color=pl.get("color"),
+                          language=pl.get("name"), lang_color=pl.get("color"), pushed=n.get("pushedAt"),
                           languages=[(e["node"]["name"], e["size"], e["node"]["color"]) for e in n["languages"]["edges"]]))
     cc = u["contributionsCollection"]
     weeks = [[(dd["date"], dd["contributionCount"], dd["weekday"]) for dd in w["contributionDays"]]
@@ -67,8 +86,18 @@ def normalize(payload: dict) -> dict:
         contrib=dict(total=cc["contributionCalendar"]["totalContributions"],
                      commits=cc["totalCommitContributions"], prs=cc["totalPullRequestContributions"],
                      issues=cc["totalIssueContributions"], reviews=cc["totalPullRequestReviewContributions"],
+                     private=cc.get("restrictedContributionsCount", 0), new_repos=cc.get("totalRepositoryContributions", 0),
+                     by_repo=[dict(name=c["repository"]["name"], full=c["repository"].get("nameWithOwner", c["repository"]["name"]),
+                                   commits=c["contributions"]["totalCount"],
+                                   language=(c["repository"].get("primaryLanguage") or {}).get("name"),
+                                   color=(c["repository"].get("primaryLanguage") or {}).get("color"))
+                              for c in cc.get("commitContributionsByRepository", []) if not c["repository"].get("isPrivate")],
                      weeks=weeks, days=days),
         generated=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d"),
+        created=(u.get("createdAt") or "")[:10],
+        prs_total=(u.get("allPullRequests") or {}).get("totalCount", 0),
+        contributed_to=(u.get("repositoriesContributedTo") or {}).get("totalCount", 0),
+        years={int(k): v for k, v in (u.get("yearTotals") or {}).items() if v},
     )
 
 

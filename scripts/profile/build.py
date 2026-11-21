@@ -4,8 +4,8 @@
     GH_TOKEN=... python scripts/profile/build.py --out assets/profile
     python scripts/profile/build.py --data data.json --out assets/profile     # offline
 
-Writes: desktop.svg and xcode.svg (heroes), project-*.svg (cards), spotlight.svg (toolbox),
-activity.svg (numbers) and messages.svg (footer).
+Writes: xcode.svg (hero), contact-*.svg (links), project-*.svg (cards), stack.svg, activity.svg (numbers)
+and console.svg (footer).
 """
 from __future__ import annotations
 
@@ -17,9 +17,10 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import data  # noqa: E402
-import desktop  # noqa: E402
-import panels  # noqa: E402
+import extras  # noqa: E402
 import projects  # noqa: E402
+import showcase  # noqa: E402
+import stats  # noqa: E402
 import xcode  # noqa: E402
 
 
@@ -39,8 +40,10 @@ def main():
     d = data.normalize(payload)
     os.makedirs(a.out, exist_ok=True)
     by = {r["name"]: r for r in d["repos"]}
-    files = {"desktop.svg": desktop.desktop(d), "xcode.svg": xcode.xcode(d), "spotlight.svg": panels.spotlight(d),
-             "activity.svg": panels.activity(d), "messages.svg": panels.messages(d)}
+    files = {"xcode.svg": xcode.xcode(d), "stack.svg": showcase.stack(d),
+             "activity.svg": stats.activity(d), "console.svg": showcase.console(d)}
+    for k in ("telegram", "email", "location"):
+        files[f"contact-{k}.svg"] = extras.contact(k)
     for pr in projects.PROJECTS:
         files[f"project-{pr['key']}.svg"] = projects.card(pr, by.get(pr["repo"], {}))
     total = 0
